@@ -1,0 +1,110 @@
+.simulation-status {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.simulation-status h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.status-item {
+  text-align: center;
+}
+
+.status-label {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  margin-bottom: 0.25rem;
+}
+
+.status-value {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.status-value.playing {
+  color: #10b981;
+}
+
+.status-value.paused {
+  color: #f59e0b;
+}
+
+.progress-bars {
+  margin-bottom: 1rem;
+}
+
+.progress-item {
+  margin-bottom: 0.5rem;
+}
+
+.progress-label {
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+  opacity: 0.9;
+}
+
+.progress-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #10b981;
+  transition: width 0.3s ease;
+}
+
+.trip-states {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.state-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.state-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.state-dot.active {
+  background: #10b981;
+}
+
+.state-dot.completed {
+  background: #3b82f6;
+}
+
+.state-dot.cancelled {
+  background: #ef4444;
+}
+
+.current-time {
+  text-align: center;
+  font-family: monospace;
+  font-size: 0.8rem;
+  opacity: 0.9;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+.simulation-status {
+  background-color: #242424 !important;
+}

@@ -1,0 +1,36 @@
+.map-container {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Fix for Leaflet container */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: #f8f9fa;
+}
+
+.vehicle-marker {
+  font-size: 20px;
+  text-align: center;
+  background: transparent;
+  border: none;
+}
+
+/* Ensure map tiles load properly */
+.leaflet-tile {
+  filter: none !important;
+}
+
+/* Fix for popups */
+.leaflet-popup-content {
+  margin: 8px 12px;
+  line-height: 1.4;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
